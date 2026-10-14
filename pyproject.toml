@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "health-text-redact"
+version = "0.1.0"
+description = "Remove direct identifiers from English and German health conversation text"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [{ name = "ChatDok GmbH", email = "hello@chatdok.com" }]
+keywords = ["de-identification", "redaction", "privacy", "gdpr", "health-data"]
+
+[project.urls]
+Homepage = "https://github.com/chatdok-health/health-text-redact"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["health_text_redact"]
